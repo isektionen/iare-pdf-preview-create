@@ -25,4 +25,4 @@ def upload(objectname):
 
 
 def url(objectname):
-    return f"https://{getenv('BUCKET_NAME')}.{getenv('REGION')}.amazonaws.com/{objectname}"
+    return f"https://{getenv('BUCKET_NAME')}.s3.{getenv('REGION')}.amazonaws.com/{objectname}"
