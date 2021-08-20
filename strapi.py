@@ -15,7 +15,7 @@ def sendThumbnailUrl(id, objectname, providerUrl):
     name = path.basename(objectname)
     ext = "." + name.split(".")[-1]
     _hash = name.replace(ext, "")
-    size = int(path.getsize(objectname)) / 100
+    size = int(path.getsize(objectname)) / 1000
     body = {
         "id": id,
         "url": providerUrl,
